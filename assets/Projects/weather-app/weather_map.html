@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather_map.css">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header navbar-right">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <input id="location" type="text" class="form-control" placeholder="Enter City">
+                </div>
+                <button id="search" type="submit" class="btn btn-default">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <h1>Weather Application</h1>
+    <h2 id="cityName"></h2>
+
+    <!-- Nav tabs -->
+    <div class="row">
+        <div data-option=3  class="col-xs-4 col-sm-2 options active">3 days</div>
+        <div data-option=6  class="col-xs-4 col-sm-2 options">6 days</div>
+        <div data-option=9  class="col-xs-4 col-sm-2 options">9 days</div>
+    </div>
+    <div class="row">
+        <div id="day1"  data-day=0 class="col-xs-4 forecast"></div>
+        <div id="day2"  data-day=1 class="col-xs-4 forecast"></div>
+        <div id="day3"  data-day=2 class="col-xs-4 forecast"></div>
+        <div id="day4"  data-day=2 class="hide forecast"></div>
+        <div id="day5"  data-day=2 class="hide forecast"></div>
+        <div id="day6"  data-day=2 class="hide forecast"></div>
+        <div id="day7"  data-day=2 class="hide forecast"></div>
+        <div id="day8"  data-day=2 class="hide forecast"></div>
+        <div id="day9"  data-day=2 class="hide forecast"></div>
+    </div>
+
+    <div id="map-display" style="height: 400px;"></div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe0814nG-IxIgG0VMjMJ6jmU1__W1TFGQ"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="js/weather-map.js"></script>
+
+</body>
+</html>
