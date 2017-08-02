@@ -127,7 +127,7 @@ $(document).ready(function(){
 
         $(this).addClass('active');
 
-        $('.forecast').removeClass('col-xs-12 col-xs-6 col-xs-4 col-xs-3 col-sm-3').addClass('hide')
+        $('.forecast').removeClass('col-xs-12 col-xs-6 col-xs-4 col-xs-3 col-sm-3').addClass('hide');
 
         switch ($(this).attr('data-option')){
             case '3':
