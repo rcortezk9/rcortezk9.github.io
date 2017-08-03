@@ -89,7 +89,7 @@ $(document).ready(function(){
     }
 
     function getWeather(lat, lon) {
-        $.get("https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast/daily", {
+        $.get("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast/daily", {
             APPID: "55aec6780da8e9b516e2937ae17b58af",
             lat: lat,
             lon: lon,
